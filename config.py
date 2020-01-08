@@ -8,3 +8,9 @@ else:
 
 
 Var = Config
+
+from heroku_config import Var
+
+class Development(Var):
+  APP_ID = 947802
+  API_HASH = "17b1e55ff6633d8e88165cc92eab08a1"
